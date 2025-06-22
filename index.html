@@ -3,34 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Feature-Karten-Sektion mit unseren wichtigsten Vorteilen: Schnelle Performance, Premium Support und maximale Sicherheit.">
-    <title>Feature-Karten-Sektion</title>
+    <title>TechMag - Das Online Technologie-Magazin</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <section class="features-section" aria-labelledby="features-heading">
-            <h2 id="features-heading">Unsere Vorteile</h2>
-            <div class="card-container" role="list">
-                <article class="card" role="listitem">
-                    <div class="icon" aria-label="Rakete Symbol für Geschwindigkeit">🚀</div>
-                    <h3>Schnelle Performance</h3>
-                    <p>Optimierte Ladezeiten und blitzschnelle Reaktionszeiten für die beste Benutzererfahrung.</p>
-                </article>
+    <!-- Website Grid Container -->
+    <div class="magazine-grid">
+        <!-- Header -->
+        <header class="site-header">
+            <div class="logo">📱 TechMag</div>
+            <nav class="main-nav">
+                <a href="#">News</a>
+                <a href="#">Reviews</a>
+                <a href="#">Trends</a>
+                <a href="#">About</a>
+            </nav>
+        </header>
 
-                <article class="card featured" role="listitem" aria-label="Hervorgehobene Karte">
-                    <div class="icon" aria-label="Stern Symbol für Premium Qualität">⭐</div>
-                    <h3>Premium Support</h3>
-                    <p>24/7 Kundensupport mit persönlicher Betreuung und schneller Problemlösung für alle Ihre Anliegen.</p>
-                </article>
-
-                <article class="card" role="listitem">
-                    <div class="icon" aria-label="Schloss Symbol für Sicherheit">🔒</div>
-                    <h3>Maximale Sicherheit</h3>
-                    <p>Modernste Verschlüsselung und Sicherheitsstandards zum Schutz Ihrer wertvollen Daten.</p>
-                </article>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3>🔥 Trending</h3>
+                <ul>
+                    <li>iPhone 15 Review</li>
+                    <li>AI Revolution 2025</li>
+                    <li>Gaming Laptops</li>
+                </ul>
             </div>
-        </section>
-    </main>
+            <div class="sidebar-section">
+                <h3>📧 Newsletter</h3>
+                <p>Bleib auf dem Laufenden!</p>
+                <button>Abonnieren</button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Featured Article Grid -->
+            <section class="articles-grid">
+                <!-- Hero Article -->
+                <article class="article hero-article">
+                    <div class="article-image">🚀</div>
+                    <div class="article-content">
+                        <span class="article-category">Breakthrough</span>
+                        <h2>Die Zukunft der KI: Was uns 2025 erwartet</h2>
+                        <p>Künstliche Intelligenz revolutioniert unsere Welt. Hier sind die wichtigsten Trends...</p>
+                        <div class="article-meta">
+                            <span>Von Sarah Tech</span>
+                            <span>15. Januar 2025</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Standard Articles -->
+                <article class="article">
+                    <div class="article-image">💻</div>
+                    <div class="article-content">
+                        <span class="article-category">Hardware</span>
+                        <h3>MacBook Pro M4 im Test</h3>
+                        <p>Apple's neuester Chip überzeugt im Praxistest...</p>
+                        <div class="article-meta">
+                            <span>Von Max Weber</span>
+                            <span>14. Jan</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article">
+                    <div class="article-image">🎮</div>
+                    <div class="article-content">
+                        <span class="article-category">Gaming</span>
+                        <h3>Steam Deck vs Nintendo Switch</h3>
+                        <p>Welche Handheld-Konsole ist die bessere Wahl?</p>
+                        <div class="article-meta">
+                            <span>Von Lisa Chen</span>
+                            <span>13. Jan</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article featured">
+                    <div class="article-image">🔋</div>
+                    <div class="article-content">
+                        <span class="article-category">Innovation</span>
+                        <h3>Revolutionäre Akku-Technologie</h3>
+                        <p>Neue Festkörper-Akkus versprechen 10x längere Laufzeit und 5-Minuten-Ladung...</p>
+                        <div class="article-meta">
+                            <span>Von Dr. Anna Schmidt</span>
+                            <span>12. Jan</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article">
+                    <div class="article-image">🌐</div>
+                    <div class="article-content">
+                        <span class="article-category">Web</span>
+                        <h3>WebAssembly wird Mainstream</h3>
+                        <p>Performance-Boost für Web-Anwendungen...</p>
+                        <div class="article-meta">
+                            <span>Von Tom Code</span>
+                            <span>11. Jan</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article">
+                    <div class="article-image">📱</div>
+                    <div class="article-content">
+                        <span class="article-category">Mobile</span>
+                        <h3>5G-Netze: Endlich überall?</h3>
+                        <p>Der aktuelle Stand des 5G-Ausbaus...</p>
+                        <div class="article-meta">
+                            <span>Von Network Pro</span>
+                            <span>10. Jan</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>TechMag</h4>
+                    <p>Das führende Online-Magazin für Technologie-Enthusiasten</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <p>redaktion@techmag.de</p>
+                    <p>+49 123 456 789</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Social Media</h4>
+                    <p>📘 Facebook</p>
+                    <p>🐦 Twitter</p>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
