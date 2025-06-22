@@ -1,0 +1,182 @@
+/* CSS-Variablen für Dark-Mode-Kompatibilität */
+:root {
+    --bg-primary: #f7f7f7;
+    --bg-card: white;
+    --text-primary: #333;
+    --text-secondary: #666;
+    --border-featured: gold;
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-dark: rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-primary: #1a1a1a;
+        --bg-card: #2d2d2d;
+        --text-primary: #ffffff;
+        --text-secondary: #cccccc;
+        --border-featured: #ffd700;
+        --shadow-light: rgba(255, 255, 255, 0.1);
+        --shadow-dark: rgba(255, 255, 255, 0.2);
+    }
+}
+
+/* Reset und Basis-Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+}
+
+/* Features Section */
+.features-section {
+    padding: 40px 20px;
+    background-color: var(--bg-primary);
+}
+
+.features-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Cards */
+.card {
+    background-color: var(--bg-card);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px var(--shadow-dark);
+}
+
+/* Featured Card */
+.card.featured {
+    border: 2px solid var(--border-featured);
+    position: relative;
+}
+
+.card.featured::before {
+    content: "BELIEBT";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background-color: var(--border-featured);
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Card Elements */
+.card .icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.card p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features-section {
+        padding: 30px 15px;
+    }
+    
+    .features-section h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .card {
+        min-width: 100%;
+        max-width: 400px;
+    }
+    
+    .card .icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+    }
+    
+    .card p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Zusätzliche kleine Bildschirme */
+@media (max-width: 480px) {
+    .features-section {
+        padding: 20px 10px;
+    }
+    
+    .features-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .card {
+        padding: 15px;
+    }
+    
+    .card .icon {
+        font-size: 2rem;
+    }
+    
+    .card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .card p {
+        font-size: 0.9rem;
+    }
+}
